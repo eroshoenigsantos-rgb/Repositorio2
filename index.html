@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com"/>
     
-    <!-- SweetAlert2 (CSS + JS via CDN) -->
-    <link rel="stylesheet" href="https://jsdelivr.net">
+    <!-- Inclusão do SweetAlert2 -->
     <script src="https://jsdelivr.net"></script>
 
   </head>
@@ -107,9 +106,9 @@
 
                 <div class="row">
 
-                  <!-- Jogo do Foguete -->
+                  <!-- Jogo do Foguete (SweetAlert configurado no bloco inteiro) -->
                   <div class="col-lg-4 col-sm-6">
-                    <div class="item" id="btn-foguete" style="cursor: pointer;">
+                    <div class="item" style="cursor: pointer;" onclick="abrirJogo('🚀 Jogo do Foguete', 'foguete.html')">
                       <img src="assets/images/imagemdofoguete.jpg" alt="Jogo do Foguete">
                       <h4>
                         🚀 Jogo do Foguete<br>
@@ -122,9 +121,9 @@
                     </div>
                   </div>
 
-                  <!-- Jogo Mines -->
+                  <!-- Jogo Mines (SweetAlert configurado no bloco inteiro) -->
                   <div class="col-lg-4 col-sm-6">
-                    <div class="item" id="btn-mines" style="cursor: pointer;">
+                    <div class="item" style="cursor: pointer;" onclick="abrirJogo('💣 Mines', 'minas.html')">
                       <img src="assets/images/imagemdomines.jpg" alt="Mines">
                       <h4>
                         💣 Mines<br>
@@ -241,40 +240,26 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  <!-- Script de Controle do SweetAlert integrado -->
+  <!-- Função do SweetAlert -->
   <script>
-    \$(document).ready(function() {
-      
-      function dispararAlerta(nomeJogo, urlJogo) {
-        Swal.fire({
-          title: 'Entrar no Jogo?',
-          text: `Você deseja carregar o jogo ${nomeJogo}?`,
-          icon: 'question',
-          showCancelButton: true,
-          confirmButtonColor: '#ec4899', 
-          cancelButtonColor: '#6c757d',
-          confirmButtonText: 'Sim, jogar!',
-          cancelButtonText: 'Cancelar',
-          background: '#1f2122', 
-          color: '#fff'
-        }).then((result) => {
-          if (result.isConfirmed) {
-            window.location.href = urlJogo;
-          }
-        });
-      }
-
-      \$('#btn-foguete').on('click', function(e) {
-        e.preventDefault();
-        dispararAlerta('🚀 Jogo do Foguete', 'foguete.html');
+    function abrirJogo(nomeJogo, urlJogo) {
+      Swal.fire({
+        title: 'Entrar no Jogo?',
+        text: 'Você deseja carregar o jogo ' + nomeJogo + '?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#ec6090', /* Rosa idêntico ao destaque do seu CSS */
+        cancelButtonColor: '#333638',
+        confirmButtonText: 'Sim, jogar!',
+        cancelButtonText: 'Cancelar',
+        background: '#1f2122', /* Cor escura do seu painel */
+        color: '#ffffff'
+      }).then(function(result) {
+        if (result.isConfirmed) {
+          window.location.href = urlJogo;
+        }
       });
-
-      \$('#btn-mines').on('click', function(e) {
-        e.preventDefault();
-        dispararAlerta('💣 Mines', 'minas.html');
-      });
-
-    });
+    }
   </script>
 
   </body>
