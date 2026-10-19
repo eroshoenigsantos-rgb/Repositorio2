@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com"/>
     
-    <!-- Inclusão do SweetAlert2 -->
-    <script src="https://jsdelivr.net"></script>
+    <!-- Chamada Local para o arquivo do SweetAlert2 salvo na sua pasta js -->
+    <script src="assets/js/sweetalert2.all.min.js"></script>
 
   </head>
 
@@ -106,7 +106,7 @@
 
                 <div class="row">
 
-                  <!-- Jogo do Foguete (SweetAlert configurado no bloco inteiro) -->
+                  <!-- Jogo do Foguete (Dispara o SweetAlert ao clicar em qualquer lugar da caixa) -->
                   <div class="col-lg-4 col-sm-6">
                     <div class="item" style="cursor: pointer;" onclick="abrirJogo('🚀 Jogo do Foguete', 'foguete.html')">
                       <img src="assets/images/imagemdofoguete.jpg" alt="Jogo do Foguete">
@@ -121,7 +121,7 @@
                     </div>
                   </div>
 
-                  <!-- Jogo Mines (SweetAlert configurado no bloco inteiro) -->
+                  <!-- Jogo Mines (Dispara o SweetAlert ao clicar em qualquer lugar da caixa) -->
                   <div class="col-lg-4 col-sm-6">
                     <div class="item" style="cursor: pointer;" onclick="abrirJogo('💣 Mines', 'minas.html')">
                       <img src="assets/images/imagemdomines.jpg" alt="Mines">
@@ -243,22 +243,27 @@
   <!-- Função do SweetAlert -->
   <script>
     function abrirJogo(nomeJogo, urlJogo) {
-      Swal.fire({
-        title: 'Entrar no Jogo?',
-        text: 'Você deseja carregar o jogo ' + nomeJogo + '?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonColor: '#ec6090', /* Rosa idêntico ao destaque do seu CSS */
-        cancelButtonColor: '#333638',
-        confirmButtonText: 'Sim, jogar!',
-        cancelButtonText: 'Cancelar',
-        background: '#1f2122', /* Cor escura do seu painel */
-        color: '#ffffff'
-      }).then(function(result) {
-        if (result.isConfirmed) {
-          window.location.href = urlJogo;
-        }
-      });
+      if (typeof Swal !== 'undefined') {
+        Swal.fire({
+          title: 'Entrar no Jogo?',
+          text: 'Você deseja carregar o jogo ' + nomeJogo + '?',
+          icon: 'question',
+          showCancelButton: true,
+          confirmButtonColor: '#ec6090', /* Rosa idêntico ao destaque do seu CSS */
+          cancelButtonColor: '#333638',
+          confirmButtonText: 'Sim, jogar!',
+          cancelButtonText: 'Cancelar',
+          background: '#1f2122', /* Cor escura do seu painel */
+          color: '#ffffff'
+        }).then(function(result) {
+          if (result.isConfirmed) {
+            window.location.href = urlJogo;
+          }
+        });
+      } else {
+        // Fallback de segurança se o arquivo js falhar ou sumir da pasta
+        window.location.href = urlJogo;
+      }
     }
   </script>
 
