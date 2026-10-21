@@ -6,23 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>Cyborg - Awesome HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com"/>
-    
-    <!-- Chamada Local para o arquivo do SweetAlert2 salvo na sua pasta js -->
-    <script src="assets/js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
 
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
   </head>
 
 <body>
@@ -48,8 +52,8 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo2.svg" alt="BETSPIN">
-                    </a>
+    <img src="assets/images/logo2.svg" alt="BETSPIN">
+</a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
                     <div class="search-input">
@@ -62,6 +66,9 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
+                        
+                        
+                      
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -94,127 +101,183 @@
             </div>
           </div>
           <!-- ***** Banner End ***** -->
-          
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
+<!-- ***** Most Popular Start ***** -->
+<div class="most-popular">
+  <div class="row">
+    <div class="col-lg-12">
 
-                <div class="heading-section">
-                  <h4><em>Jogos</em> em Destaque</h4>
-                </div>
+      <div class="heading-section">
+        <h4><em>Jogos</em> em Destaque</h4>
+      </div>
 
-                <div class="row">
+      <div class="row">
 
-                  <!-- Jogo do Foguete (Dispara o SweetAlert ao clicar em qualquer lugar da caixa) -->
-                  <div class="col-lg-4 col-sm-6">
-                    <div class="item" style="cursor: pointer;" onclick="abrirJogo('🚀 Jogo do Foguete', 'foguete.html')">
-                      <img src="assets/images/imagemdofoguete.jpg" alt="Jogo do Foguete">
-                      <h4>
-                        🚀 Jogo do Foguete<br>
-                        <span>Crash Game</span>
-                      </h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 5.0</li>
-                        <li><i class="fa fa-gamepad"></i> Jogar</li>
-                      </ul>
-                    </div>
-                  </div>
+<!-- Jogo do Foguete -->
+<div class="col-lg-4 col-sm-6">
 
-                  <!-- Jogo Mines (Dispara o SweetAlert ao clicar em qualquer lugar da caixa) -->
-                  <div class="col-lg-4 col-sm-6">
-                    <div class="item" style="cursor: pointer;" onclick="abrirJogo('💣 Mines', 'minas.html')">
-                      <img src="assets/images/imagemdomines.jpg" alt="Mines">
-                      <h4>
-                        💣 Mines<br>
-                        <span>Mine Game</span>
-                      </h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 5.0</li>
-                        <li><i class="fa fa-gamepad"></i> Jogar</li>
-                      </ul>
-                    </div>
-                  </div>
+  <div class="item">
 
-                  <!-- Jogo Plinko -->
-                  <div class="col-lg-4 col-sm-6">
-                    <div class="item">
-                      <a href="plinko.html">
-                        <img src="assets/images/imagemdoplinko.webp" alt="Plinko">
-                      </a>
-                      <h4>
-                        🟣 Plinko<br>
-                        <span>Arcade Game</span>
-                      </h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 5.0</li>
-                        <li><i class="fa fa-gamepad"></i> Jogar</li>
-                      </ul>
-                    </div>
-                  </div>
+    <a href="foguete.html">
+      <img src="assets/images/imagemdofoguete.jpg" alt="Jogo do Foguete">
+    </a>
 
-                  <!-- Jogo Slots -->
-                  <div class="col-lg-4 col-sm-6">
-                    <div class="item">
-                      <a href="slots.html">
-                        <img src="assets/images/imagemdoslot.jpg" alt="Slots">
-                      </a>
-                      <h4>
-                        🎰 Slots<br>
-                        <span>Slot Machine</span>
-                      </h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 5.0</li>
-                        <li><i class="fa fa-gamepad"></i> Jogar</li>
-                      </ul>
-                    </div>
-                  </div>
+    <h4>
+      🚀 Jogo do Foguete<br>
+      <span>Crash Game</span>
+    </h4>
 
-                </div>
-              </div>
-            </div>
+    <ul>
+      <li>
+        <i class="fa fa-star"></i> 5.0
+      </li>
+
+      <li>
+        <i class="fa fa-gamepad"></i> Jogar
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+```html
+<!-- Jogo Mines -->
+<div class="col-lg-4 col-sm-6">
+
+  <div class="item">
+
+    <a href="minas.html">
+      <img src="assets/images/imagemdomines.jpg" alt="Mines">
+    </a>
+
+    <h4>
+      💣 Mines<br>
+      <span>Mine Game</span>
+    </h4>
+
+    <ul>
+      <li>
+        <i class="fa fa-star"></i> 5.0
+      </li>
+
+      <li>
+        <i class="fa fa-gamepad"></i> Jogar
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- Jogo Plinko -->
+<div class="col-lg-4 col-sm-6">
+
+  <div class="item">
+
+    <a href="plinko.html">
+      <img src="assets/images/imagemdoplinko.webp" alt="Plinko">
+    </a>
+
+    <h4>
+      🟣 Plinko<br>
+      <span>Arcade Game</span>
+    </h4>
+
+    <ul>
+      <li>
+        <i class="fa fa-star"></i> 5.0
+      </li>
+
+      <li>
+        <i class="fa fa-gamepad"></i> Jogar
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- Jogo Slots -->
+<div class="col-lg-4 col-sm-6">
+
+  <div class="item">
+
+    <a href="slots.html">
+      <img src="assets/images/imagemdoslot.jpg" alt="Slots">
+    </a>
+
+    <h4>
+      🎰 Slots<br>
+      <span>Slot Machine</span>
+    </h4>
+
+    <ul>
+      <li>
+        <i class="fa fa-star"></i> 5.0
+      </li>
+
+      <li>
+        <i class="fa fa-gamepad"></i> Jogar
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- ***** Most Popular End ***** -->
+          <!-- ***** Gaming Library Start ***** -->
+          ```html
+<!-- ***** Coming Soon Start ***** -->
+<div class="gaming-library">
+  <div class="col-lg-12">
+
+    <div class="heading-section">
+      <h4><em>Mais</em> Jogos em Breve</h4>
+    </div>
+
+    <div class="item">
+      <ul>
+        <li>
+          <div style="font-size: 45px;">🎮</div>
+        </li>
+
+        <li>
+          <h4>Novos jogos</h4>
+          <span>Em desenvolvimento</span>
+        </li>
+
+        <li>
+          <h4>Status</h4>
+          <span>Em breve</span>
+        </li>
+
+        <li>
+          <h4>Jogos disponíveis</h4>
+          <span>1</span>
+        </li>
+
+        <li>
+          <h4>Atualmente</h4>
+          <span>🚀 Foguete</span>
+        </li>
+
+        <li>
+          <div class="main-border-button border-no-active">
+            <a href="browse.html">Ver jogos</a>
           </div>
-          <!-- ***** Most Popular End ***** -->
-          
-          <!-- ***** Coming Soon Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
+        </li>
+      </ul>
+    </div>
 
-              <div class="heading-section">
-                <h4><em>Mais</em> Jogos em Breve</h4>
-              </div>
+  </div>
+</div>
 
-              <div class="item">
-                <ul>
-                  <li><div style="font-size: 45px;">🎮</div></li>
-                  <li>
-                    <h4>Novos jogos</h4>
-                    <span>Em desenvolvimento</span>
-                  </li>
-                  <li>
-                    <h4>Status</h4>
-                    <span>Em breve</span>
-                  </li>
-                  <li>
-                    <h4>Jogos disponíveis</h4>
-                    <span>1</span>
-                  </li>
-                  <li>
-                    <h4>Atualmente</h4>
-                    <span>🚀 Foguete</span>
-                  </li>
-                  <li>
-                    <div class="main-border-button border-no-active">
-                      <a href="browse.html">Ver jogos</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+<!-- ***** Coming Soon End ***** -->
+```
 
-            </div>
-          </div>
-          <!-- ***** Coming Soon End ***** -->
-
+          <!-- ***** Gaming Library End ***** -->
         </div>
       </div>
     </div>
@@ -225,47 +288,26 @@
       <div class="row">
         <div class="col-lg-12">
           <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a> Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+          
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts do Template -->
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  <!-- Função do SweetAlert -->
-  <script>
-    function abrirJogo(nomeJogo, urlJogo) {
-      if (typeof Swal !== 'undefined') {
-        Swal.fire({
-          title: 'Entrar no Jogo?',
-          text: 'Você deseja carregar o jogo ' + nomeJogo + '?',
-          icon: 'question',
-          showCancelButton: true,
-          confirmButtonColor: '#ec6090', /* Rosa idêntico ao destaque do seu CSS */
-          cancelButtonColor: '#333638',
-          confirmButtonText: 'Sim, jogar!',
-          cancelButtonText: 'Cancelar',
-          background: '#1f2122', /* Cor escura do seu painel */
-          color: '#ffffff'
-        }).then(function(result) {
-          if (result.isConfirmed) {
-            window.location.href = urlJogo;
-          }
-        });
-      } else {
-        // Fallback de segurança se o arquivo js falhar ou sumir da pasta
-        window.location.href = urlJogo;
-      }
-    }
-  </script>
 
   </body>
+
 </html>
