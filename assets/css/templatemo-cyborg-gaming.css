@@ -1733,3 +1733,31 @@ body {
     width: 16%;
   }
 }
+/* ============================================================
+   AJUSTE DE IMAGENS E BORDAS - JOGOS EM DESTAQUE
+   ============================================================ */
+
+/* Garante o arredondamento e previne que o conteúdo saia do card */
+.most-popular .item {
+  background-color: #27292a !important;
+  border-radius: 23px !important;
+  overflow: hidden !important;
+}
+
+/* Garante que o link da imagem tenha display em bloco e bordas redondas */
+.most-popular .item a {
+  display: block !important;
+  border-radius: 23px !important;
+  overflow: hidden !important;
+  background-color: transparent !important;
+}
+
+/* Ajusta a imagem para caber inteira no card sem esticar ou quebrar */
+.most-popular .item img {
+  width: 100% !important;
+  height: 210px !important;            /* Altura padronizada para os cards */
+  object-fit: cover !important;        /* Preenche a largura uniformemente */
+  object-position: center !important;  /* Centraliza a imagem no quadro */
+  display: block !important;
+  border-radius: 23px !important;      /* Borda arredondada nas imagens */
+}
