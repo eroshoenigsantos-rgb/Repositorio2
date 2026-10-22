@@ -1739,8 +1739,9 @@ body {
 .most-popular .item img {
     width: 100%;
     height: 180px;
-    object-fit: cover; /* Ajusta a imagem para preencher o espaço perfeitamente */
+    object-fit: contain; /* Mostra a imagem inteira sem cortar */
     object-position: center;
     display: block;
-    border-radius: 23px; /* Deixa as bordas arredondadas no padrão do site */
+    border-radius: 23px; /* Bordas arredondadas no padrão do site */
+    background-color: #1e1e1e; /* Fundo opcional para preencher caso a proporção varie */
 }
