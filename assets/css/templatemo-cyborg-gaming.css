@@ -1733,14 +1733,3 @@ body {
     width: 16%;
   }
 }
-
-
-
-.most-popular .item img {
-    width: 100% !important;
-    height: 180px !important;
-    object-fit: contain !important;
-    object-position: left center !important; /* Encosta a imagem no lado esquerdo */
-    display: block !important;
-    border-radius: 23px !important; /* Mantém a borda arredondada */
-}
