@@ -1736,18 +1736,11 @@ body {
 
 
 
-/* Imagens dos jogos */
 .most-popular .item img {
     width: 100%;
     height: 180px;
     object-fit: contain;
+    object-position: center;
     display: block;
     border-radius: 10px;
-}
-
-/* Celulares */
-@media (max-width: 576px) {
-    .most-popular .item img {
-        height: 140px;
-    }
 }
