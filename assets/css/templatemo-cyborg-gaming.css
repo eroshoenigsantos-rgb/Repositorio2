@@ -199,3 +199,18 @@ footer p {
   color: #fff;
   font-weight: 300;
 }
+.most-popular .item a {
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.most-popular .item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* quadrada; use 16 / 9 se quiser mais "larga" */
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 15px;      /* borda um pouco menos arredondada que o card */
+}
