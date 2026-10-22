@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 212.5" width="100%" height="100%">
+  <!-- Fundo Escuro Sólido -->
+  <rect width="800" height="212.5" fill="#202227"/>
+
+  <!-- Símbolo da Roleta (Vetor 2D Minimalista) -->
+  <g transform="translate(110, 106.25)">
+    <!-- Círculo Externo (Borda Rosa Chiclete) -->
+    <circle r="75" fill="#EE719E"/>
+    <!-- Anel Intermediário (Vinho/Roxo) -->
+    <circle r="68" fill="#8C1D58"/>
+    <!-- Anel Interno -->
+    <circle r="52" fill="#202227"/>
+    <circle r="50" fill="#E24A8B"/>
+    
+    <!-- Linhas Vazadas e Divisórias Brancas -->
+    <g stroke="#FFFFFF" stroke-width="2.5" opacity="0.9">
+      <line x1="0" y1="-75" x2="0" y2="75"/>
+      <line x1="-75" y1="0" x2="75" y2="0"/>
+      <line x1="-53" y1="-53" x2="53" y2="53"/>
+      <line x1="-53" y1="53" x2="53" y2="-53"/>
+      <circle r="28" fill="none"/>
+    </g>
+
+    <!-- Centro da Roleta -->
+    <circle r="18" fill="#EE719E"/>
+    <circle r="5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Tipografia BETSPIN (Texto Flat Bold) -->
+  <text x="235" y="132" 
+        font-family="Arial, Helvetica, sans-serif" 
+        font-weight="900" 
+        font-size="92" 
+        fill="#EE719E" 
+        letter-spacing="2">BETSPIN</text>
+</svg>
